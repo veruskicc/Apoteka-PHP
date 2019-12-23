@@ -1,0 +1,228 @@
+*{
+	margin:0;
+}
+.naslov{
+	text-align:center;
+	font-family:Advent Pro;
+	font-style:italic;
+	font-size:50px;
+	color:white;
+}
+.prvi{
+	background-color:lightseagreen;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:lightseagreen;
+	position:absolute;
+	width:100%;
+}
+li{
+	float:left;
+	display:inline-block;
+}
+li a{
+	display:block;
+	color:white;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+	font-family:Advent Pro;
+	font-style:italic;
+	background:lightseagreen;
+	width:140px;
+	height:30px;
+	line-height:30px;
+	font-size:18px;
+}
+li a:hover{
+	background-color:aquamarine;
+}
+.padajucimeni{
+	position:relative;
+	display:inline-block;
+}
+.padajucimenisadrzaj{
+	display:none;
+	position:absolute;
+	background-color:lightseagreen;
+	z-index:1;
+}
+.padajucimeni:hover .padajucimenisadrzaj{
+	display:block;
+}
+.padajucimenisadrzaj a{
+	color:white;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.padajucimenisadrzaj a:hover{
+	background-color:aquamarine;
+}
+.pozadina{
+	background-image:url('medications.jpg');
+	background-size:cover;
+}
+.galerija{
+	display:inline-block;
+}
+.galerija img{
+	margin:100px 100px 20px 110px;
+	width:230px;
+	height:210px;
+}
+.galerija img:hover{
+	animation:animacija 4s;
+}
+.galerija1{
+	display:inline-block;
+}
+.galerija1 img{
+	margin:100px 70px 20px 60px;
+	width:140px;
+	height:110px;
+}
+.paragraf{
+	text-align:center;
+	font-family:Advent Pro;
+	font-style:italic;
+	font-weight:bold;
+	font-size:18px;
+}
+.naslov1{
+	text-align:center;
+	font-family:Advent Pro;
+	font-style:italic;
+	font-weight:bold;
+	font-size:50px;
+	color:seashell;
+	padding-top:80px;
+	text-shadow:2px 2px black;
+}
+.paragraf2{
+	text-align:center;
+	font-family:Advent Pro;
+	font-style:italic;
+	font-weight:bold;
+	font-size:30px;
+	color:seashell;
+	text-shadow:2px 2px black;
+	padding-top:30px;
+	}
+@keyframes animacija
+{
+	0%{
+		width:230px;
+		height:210px;
+	}
+	50%{
+		width:250px;
+		height:230px;
+	}
+	100%{
+		width:230px;
+		height:210px;
+	}
+}
+.cetvrti{
+	padding-top:100px;
+}
+input[type=text],input[type=email],input[type=password]{
+	display:block;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-family:Advent Pro;
+	font-weight:bold;
+	font-style:italic;
+}
+input[type=submit], input[type=reset],button{
+	font-family:Advent Pro;
+	font-weight:bold;
+	font-style:italic;
+	margin-top:5px;
+	margin-left:5px;
+}
+.paragraf1{
+	font-family:Advent Pro;
+	font-weight:bold;
+	font-style:italic;
+	font-size:20px;
+	color:seashell;
+	text-shadow: 2px 2px black;
+}
+@media screen and (max-width:768px)
+{
+	ul li,li a{
+		width:100%;
+	}
+	.galerija img{
+		margin-top:200px;
+		margin-left:100px;
+		margin-right:50px;
+		height:120px;
+		width:140px;
+	}
+	.paragraf{
+		margin-left:40px;
+	}
+	.forma{
+		margin-top:100px;
+	}
+	.galerija1 img{
+		margin-top:200px;
+		margin-left:100px;
+		margin-right:50px;
+		height:120px;
+		width:140px;
+	}
+}
+@media screen and (max-width:600px)
+{
+	ul li,li a{
+		width:100%;
+	}
+	.galerija img{
+		margin-top:200px;
+		margin-left:120px;
+		margin-bottom:20px;
+		padding-top:10px;
+		height:150px;
+		width:170px;
+	}
+	.paragraf{
+		margin-left:75px;
+	}
+	textarea{
+		width:80%;
+	}
+	.galerija1 img{
+		margin-top:200px;
+		margin-left:130px;
+		margin-right:50px;
+		padding-top:10px;
+		height:120px;
+		width:140px;
+	}
+}
+.paragraf3{
+	text-align:center;
+	font-family:Advent Pro;
+	font-style:italic;
+	font-weight:bold;
+	font-size:18px;
+	margin-top:390px;
+}
+.json{
+	text-align:justify;
+	margin-top:75px;
+	margin-left:5px;
+	line-height:1.6;
+	font-family:Advent Pro;
+	font-style:italic;
+	font-weight:bold;
+	font-size:18px;
+}
+
